@@ -1,0 +1,9 @@
+{
+	"name": "Pipe_Everything",
+	"version": "0.1",
+	"title": "Pipe Everything",
+	"author": "Swadius",
+	"homepage": "",
+	"description": "Shunts all solid items into a fluid like substance allowing the logistic network to be composed of pipes. Hopefully more FPS friendly.",
+
+}
