@@ -1,10 +1,13 @@
+require ("prototypes.entity.assemblerpipes")
+require ("util")
+
 data:extend(
 {
   -- Flusher 
     {
     type = "assembling-machine",
     name = "flusher",
-    icon = "__base__/graphics/icons/entities/flusher.png",
+    icon = "__PipeEverything__/graphics/icon/entities/flusher.png",
     flags = {"placeable-neutral", "placeable-player", "player-creation"},
     minable = {hardness = 0.2, mining_time = 0.5, result = "flusher"},
     max_health = 200,
@@ -22,7 +25,7 @@ data:extend(
     fast_replaceable_group = "assembling-machine",
     animation =
     {
-      filename = "pipe_everything/graphics/entity/flusher/flusher.png",
+      filename = "__PipeEverything__/graphics/entity/flusher/flusher.png",
       priority="high",
       width = 99,
       height = 102,
@@ -30,7 +33,7 @@ data:extend(
       line_length = 8,
       shift = {0.25, -0.1}
     },
-    crafting_categories = {"crafting"},
+    crafting_categories = {"chemistry"},
     crafting_speed = 5,
     energy_source =
     {
@@ -45,7 +48,8 @@ data:extend(
     vehicle_impact_sound =  { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
     working_sound =
     {
-      sound = {
+      sound = 
+	  {
         {
           filename = "__base__/sound/assembling-machine-t1-1.ogg",
           volume = 0.8
@@ -57,7 +61,7 @@ data:extend(
       },
       idle_sound = { filename = "__base__/sound/idle1.ogg", volume = 0.6 },
       apparent_volume = 1.5,
-    }
+    },
     fluid_boxes =
     {
       {
@@ -93,7 +97,7 @@ data:extend(
 {
 	type = "assembling-machine",
 	name = "condenser",
-	icon = "__base__/graphics/icons/entities/condenser.png",
+	icon = "__PipeEverything__/graphics/icon/entities/condenser.png",
 	flags = {"placeable-neutral", "placeable-player", "player-creation"},
 	minable = {hardness = 0.2, mining_time = 0.5, result = "condenser"},
 	max_health = 200,
@@ -111,7 +115,7 @@ data:extend(
 	fast_replaceable_group = "assembling-machine",
 	animation =
 	{
-	  filename = "pipe-everything/graphics/entity/condenser/condenser.png",
+	  filename = "__PipeEverything__/graphics/entity/condenser/condenser.png",
 	  priority="high",
 	  width = 99,
 	  height = 102,
@@ -119,7 +123,7 @@ data:extend(
 	  line_length = 8,
 	  shift = {0.25, -0.1}
 	},
-	crafting_categories = {"crafting"},
+	crafting_categories = {"chemistry"},
 	crafting_speed = 5,
 	energy_source =
 	{
@@ -146,7 +150,7 @@ data:extend(
 	  },
 	  idle_sound = { filename = "__base__/sound/idle1.ogg", volume = 0.6 },
 	  apparent_volume = 1.5,
-	}
+	},
 	fluid_boxes =
 	{
 	  {
@@ -172,13 +176,13 @@ data:extend(
 	  }
 	}
 },
---liquid assembly machine 1  
+--liquid assembly machine
 {
 	type = "assembling-machine",
-	name = "liquid-assembly-machine-1",
-	icon = "__base__/graphics/icons/entities/liquid-assembly-machine-1.png",
+	name = "liquid-assembly-machine",
+	icon = "__PipeEverything__/graphics/icon/entities/liquid-assembly-machine-1.png",
 	flags = {"placeable-neutral", "placeable-player", "player-creation"},
-	minable = {hardness = 0.2, mining_time = 0.5, result = "liquid-assembly-machine-1"},
+	minable = {hardness = 0.2, mining_time = 0.5, result = "liquid-assembly-machine"},
 	max_health = 200,
 	corpse = "big-remnants",
 	dying_explosion = "medium-explosion",
@@ -194,7 +198,7 @@ data:extend(
 	fast_replaceable_group = "assembling-machine",
 	animation =
 	{
-	  filename = "pipe-everything/graphics/entity/liquid-assembly-machine-1/liquid-assembly-machine-1.png",
+	  filename = "__PipeEverything__/graphics/entity/liquid-assembly-machine-1/liquid-assembly-machine-1.png",
 	  priority="high",
 	  width = 99,
 	  height = 102,
@@ -202,7 +206,7 @@ data:extend(
 	  line_length = 8,
 	  shift = {0.25, -0.1}
 	},
-	crafting_categories = {"crafting"},
+	crafting_categories = {"chemistry"},
 	crafting_speed = 0.5,
 	energy_source =
 	{
@@ -229,7 +233,7 @@ data:extend(
 	  },
 	  idle_sound = { filename = "__base__/sound/idle1.ogg", volume = 0.6 },
 	  apparent_volume = 1.5,
-	}
+	},
 	fluid_boxes =
 	{
 	  {
@@ -252,7 +256,7 @@ data:extend(
 {
 	type = "assembling-machine",
 	name = "liquid-assembly-machine-2",
-	icon = "__base__/graphics/icons/entities/liquid-assembly-machine-2.png",
+	icon = "__PipeEverything__/graphics/icon/entities/liquid-assembly-machine-2.png",
 	flags = {"placeable-neutral", "placeable-player", "player-creation"},
 	minable = {hardness = 0.2, mining_time = 0.5, result = "liquid-assembly-machine-2"},
 	max_health = 200,
@@ -270,7 +274,7 @@ data:extend(
 	fast_replaceable_group = "assembling-machine",
 	animation =
 	{
-	  filename = "pipe-everything/graphics/entity/liquid-assembly-machine-2/liquid-assembly-machine-2.png",
+	  filename = "__PipeEverything__/graphics/entity/liquid-assembly-machine-2/liquid-assembly-machine-2.png",
 	  priority="high",
 	  width = 99,
 	  height = 102,
@@ -278,7 +282,7 @@ data:extend(
 	  line_length = 8,
 	  shift = {0.25, -0.1}
 	},
-	crafting_categories = {"crafting"},
+	crafting_categories = {"chemistry"},
 	crafting_speed = 0.5,
 	energy_source =
 	{
@@ -305,7 +309,7 @@ data:extend(
 	  },
 	  idle_sound = { filename = "__base__/sound/idle1.ogg", volume = 0.6 },
 	  apparent_volume = 1.5,
-	}
+	},
 	fluid_boxes =
 	{
 	  {
@@ -335,7 +339,7 @@ data:extend(
 {
 	type = "assembling-machine",
 	name = "liquid-assembly-machine-3",
-	icon = "__base__/graphics/icons/entities/liquid-assembly-machine-3.png",
+	icon = "__PipeEverything__/graphics/icon/entities/liquid-assembly-machine-3.png",
 	flags = {"placeable-neutral", "placeable-player", "player-creation"},
 	minable = {hardness = 0.2, mining_time = 0.5, result = "liquid-assembly-machine-3"},
 	max_health = 200,
@@ -353,7 +357,7 @@ data:extend(
 	fast_replaceable_group = "assembling-machine",
 	animation =
 	{
-	  filename = "pipe-everything/graphics/entity/liquid-assembly-machine-3/liquid-assembly-machine-3.png",
+	  filename = "__PipeEverything__/graphics/entity/liquid-assembly-machine-3/liquid-assembly-machine-3.png",
 	  priority="high",
 	  width = 99,
 	  height = 102,
@@ -361,7 +365,7 @@ data:extend(
 	  line_length = 8,
 	  shift = {0.25, -0.1}
 	},
-	crafting_categories = {"crafting"},
+	crafting_categories = {"chemistry"},
 	crafting_speed = 0.5,
 	energy_source =
 	{
@@ -388,7 +392,7 @@ data:extend(
 	  },
 	  idle_sound = { filename = "__base__/sound/idle1.ogg", volume = 0.6 },
 	  apparent_volume = 1.5,
-	}
+	},
 	fluid_boxes =
 	{
 	  {
@@ -420,10 +424,6 @@ data:extend(
 		pipe_connections = {{ type="input", position = {-2, -1} }}
 	  }
 	}
+  },
 }
-
-data:extend(
-{
-  flusher
-  condenser
-})
+)

@@ -8,12 +8,12 @@ table.insert(
   {type = "unlock-recipe",recipe = "flusher"})
 table.insert(
   data.raw["technology"]["automation"].effects,
-  {type = "unlock-recipe",recipe = "liquid-assembly-machine-1"})
+  {type = "unlock-recipe",recipe = "liquid-assembly-machine"})
 table.insert(
-  data.raw["technology"]["automation"].effects,
+  data.raw["technology"]["automation-2"].effects,
   {type = "unlock-recipe",recipe = "liquid-assembly-machine-2"})
 table.insert(
-  data.raw["technology"]["automation"].effects,
+  data.raw["technology"]["automation-3"].effects,
   {type = "unlock-recipe",recipe = "liquid-assembly-machine-3"})  
   
 --Intermediate
@@ -41,6 +41,9 @@ table.insert(
 table.insert(
   data.raw["technology"]["engine"].effects,
   {type = "unlock-recipe",recipe = "engine-unit-liquify"})
+table.insert(
+  data.raw["technology"]["electric-engine"].effects,
+  {type = "unlock-recipe",recipe = "electric-engine-unit-liquify"})  
 table.insert(
   data.raw["technology"]["explosives"].effects,
   {type = "unlock-recipe",recipe = "explosive-liquify"})
@@ -70,7 +73,7 @@ table.insert(
   {type = "unlock-recipe",recipe = "science-pack-3-liquify"})
 table.insert(
   data.raw["technology"]["alien-technology"].effects,
-  {type = "unlock-recipe",recipe = "science-pack-4-liquify"})
+  {type = "unlock-recipe",recipe = "alien-science-pack-liquify"})
 table.insert(
   data.raw["technology"]["oil-processing"].effects,
   {type = "unlock-recipe",recipe = "solid-fuel-liquify"})
@@ -87,18 +90,10 @@ table.insert(
   data.raw["technology"]["steel-processing"].effects,
   {type = "unlock-recipe",recipe = "steel-plate-liquify"})
 table.insert(
-  data.raw["technology"]["alien-technology"].effects,
-  {type = "unlock-recipe",recipe = "science-pack-4-liquify"})
+  data.raw["technology"]["sulfur-processing"].effects,
+  {type = "unlock-recipe",recipe = "sulfur-liquify"})
 table.insert(
-  data.raw["technology"]["alien-technology"].effects,
-  {type = "unlock-recipe",recipe = "science-pack-4-liquify"})
-table.insert(
-  data.raw["technology"]["alien-technology"].effects,
-  {type = "unlock-recipe",recipe = "science-pack-4-liquify"})
-table.insert(
-  data.raw["technology"]["alien-technology"].effects,
-  {type = "unlock-recipe",recipe = "science-pack-4-liquify"})
-
-
+  data.raw["technology"]["robotics"].effects,
+  {type = "unlock-recipe",recipe = "flying-robot-frame-liquify"})
 
 
